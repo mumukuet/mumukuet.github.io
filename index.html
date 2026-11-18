@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eshrat Jahan Mumu | Civil Engineer</title>
+  <meta name="description" content="Portfolio of Eshrat Jahan Mumu, B.Sc. Civil Engineer (KUET) working in water resource engineering, GIS and remote sensing.">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top"><span class="logo">EJM</span><span class="brand-name">Eshrat Jahan Mumu</span></a>
+    <nav id="menu" aria-label="Main">
+      <a href="#about">Profile</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Tools</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button id="theme" class="icon-btn" aria-label="Toggle light/dark theme" title="Toggle black / white">◐</button>
+      <button id="burger" class="icon-btn burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="blueprint" aria-hidden="true"></div>
+      <div class="crosshair" id="crosshair" aria-hidden="true"></div>
+
+      <svg class="truss" viewBox="0 0 800 220" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        <g class="draw" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+          <!-- ground & supports -->
+          <path d="M20 200H780"/>
+          <path d="M120 200L140 170H100Z"/>
+          <path d="M660 200L680 170H640Z"/>
+          <!-- chords -->
+          <path d="M120 170H680"/>
+          <path d="M120 170L240 90H560L680 170"/>
+          <!-- web members -->
+          <path d="M240 90V170M320 90V170M400 90V170M480 90V170M560 90V170"/>
+          <path d="M240 170L320 90L400 170L480 90L560 170"/>
+          <!-- arch -->
+          <path d="M140 170Q400 -40 660 170" opacity=".55"/>
+        </g>
+        <!-- dimension line -->
+        <g class="dim" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M120 210H680M120 205V215M680 205V215"/>
+        </g>
+        <text x="400" y="219" text-anchor="middle" class="dim-text">L = 560.00</text>
+        <g fill="currentColor"><circle cx="240" cy="90" r="3"/><circle cx="400" cy="170" r="3"/><circle cx="560" cy="90" r="3"/><circle cx="120" cy="170" r="3"/><circle cx="680" cy="170" r="3"/></g>
+      </svg>
+
+      <div class="hero-grid">
+        <div class="hero-inner reveal">
+          <p class="eyebrow"><span class="mono">SHEET 01</span> &middot; B.Sc. Civil Engineering &middot; KUET</p>
+          <h1>Eshrat Jahan <span class="grad">Mumu</span></h1>
+          <p class="lead">Civil engineer building knowledge in <span id="typed" aria-live="off">water resources</span><span class="caret">|</span></p>
+          <div class="cta">
+            <a class="btn" href="#research">View research</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <figure class="portrait reveal">
+          <img src="photo.jpg" alt="Eshrat Jahan Mumu holding a plaque as Organizing Secretary of the KUET Business and Entrepreneurship Club" width="900" height="900" fetchpriority="high">
+          <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+          <figcaption class="mono">FIG. 01 &mdash; E.J. MUMU</figcaption>
+        </figure>
+      </div>
+
+      <div class="titleblock mono" aria-hidden="true">
+        <div><i>PROJECT</i>PORTFOLIO</div>
+        <div><i>DRAWN BY</i>E.J. MUMU</div>
+        <div><i>SCALE</i>1 : 1</div>
+        <div><i>REV</i>2026</div>
+      </div>
+      <a class="scroll" href="#about" aria-label="Scroll down">↓</a>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2><span class="sheet mono">02</span>Profile</h2>
+      <p class="big">Motivated civil engineering graduate eager to gain hands-on experience and explore innovative solutions. Passionate about sustainable development and dedicated to applying knowledge to real-world challenges while enhancing technical skills.</p>
+      <p>My thesis research sits in <strong>water resource engineering</strong>, combining GIS, remote sensing and data-driven methods to study urban flooding, heat islands and groundwater.</p>
+      <div class="stats">
+        <div><b data-count="3.28" data-dec="2">0</b><span>CGPA / 4.00</span></div>
+        <div><b data-count="4">0</b><span>Research works</span></div>
+        <div><b data-count="4">0</b><span>Industrial attachments</span></div>
+        <div><b data-count="5">0</b><span>Leadership roles</span></div>
+      </div>
+    </section>
+
+    <section id="research" class="reveal">
+      <h2><span class="sheet mono">03</span>Research &amp; Publications</h2>
+      <div class="papers">
+        <article class="paper tilt">
+          <header><span class="tag">Thesis</span><span class="status mono">Defended &middot; 2025</span></header>
+          <h3>Joint risk assessment of Urban Flood–Heat Island in Dhaka City of Bangladesh using a GIS-based spatial framework</h3>
+        </article>
+        <article class="paper tilt">
+          <header><span class="tag">Journal</span><span class="status mono ok">Accepted &middot; 2026</span></header>
+          <h3>Wavelet-Fourier network combined with advanced preprocessing techniques for univariate daily rainfall prediction</h3>
+        </article>
+        <article class="paper tilt">
+          <header><span class="tag">Conference</span><span class="status mono">Ongoing &middot; ICACE 2026</span></header>
+          <h3>Land use change dynamics and urban heat island assessment using a Remote Sensing-based approach – a case study for Rajshahi district in Bangladesh</h3>
+          <p>8th International Conference on Advances in Civil Engineering</p>
+        </article>
+        <article class="paper tilt">
+          <header><span class="tag">Conference</span><span class="status mono ok">Accepted &middot; ICACE 2024</span></header>
+          <h3>GIS and RS-based delineation of groundwater recharge potential zone in Bogra using AHP</h3>
+          <p>7th International Conference on Advances in Civil Engineering</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2><span class="sheet mono">04</span>Projects &amp; Field Work</h2>
+      <h3 class="sub">Academic projects &amp; field visits</h3>
+      <div class="cards">
+        <article class="card tilt feature">
+          <span class="tag">2025 &middot; Sustainability</span>
+          <h3>Green-Blue Roof System</h3>
+          <p>Designed a combined green-blue roof for a residential building in Dhaka, reducing rooftop surface temperature by <b>3–4&nbsp;°C</b> for passive cooling and a lower urban heat island effect.</p>
+        </article>
+        <article class="card tilt">
+          <span class="tag">2026 &middot; Field</span>
+          <h3>Koko Brick Field Study</h3>
+          <p>Field study at a brick field in Keraniganj, Dhaka.</p>
+        </article>
+        <article class="card tilt">
+          <span class="tag">2025 &middot; Geotechnical</span>
+          <h3>Soil Reports</h3>
+          <p>Prepared soil investigation reports.</p>
+        </article>
+        <article class="card tilt">
+          <span class="tag">2024 &middot; Sanitary</span>
+          <h3>Septic Tank Design</h3>
+          <p>Designed a septic tank for a building.</p>
+        </article>
+        <article class="card tilt">
+          <span class="tag">2023 &middot; Hydrology</span>
+          <h3>Runoff Hydrograph</h3>
+          <p>Prepared a runoff hydrograph and peak discharge rate for the northern portion of Dhaka.</p>
+        </article>
+        <article class="card tilt">
+          <span class="tag">2023 &middot; Construction</span>
+          <h3>Site Inspection</h3>
+          <p>Inspected construction of the new staff quarter at KUET.</p>
+        </article>
+      </div>
+
+      <h3 class="sub">Industrial attachments</h3>
+      <ul class="sites">
+        <li><span class="mono">2023</span>Trailing Suction Hopper Dredger (TSHD), Mongla Port Authority</li>
+        <li><span class="mono">2024</span>Multipurpose Cyclone Shelter, Koyra, Khulna</li>
+        <li><span class="mono">2024</span>Rainwater Harvesting System, Koyra, Khulna</li>
+        <li><span class="mono">2024</span>Flexible and rigid pavement inspection, Khulna</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2><span class="sheet mono">05</span>Software &amp; Tools</h2>
+      <div class="tools">
+        <div class="tool"><b>AutoCAD</b><span>2D engineering drawing, plan and section drafting, basic civil design visualization</span></div>
+        <div class="tool"><b>ArcGIS 10.8</b><span>Spatial analysis, map digitization, geoprocessing, thematic mapping</span></div>
+        <div class="tool"><b>Google Earth Engine</b><span>Remote sensing analysis, LULC mapping, time-series analysis</span></div>
+        <div class="tool"><b>RECARGA</b><span>GIS-based groundwater recharge potential assessment</span></div>
+        <div class="tool"><b>Microsoft Office</b><span>Excel, Word, PowerPoint for data analysis, reports and presentations</span></div>
+        <div class="tool"><b>Canva</b><span>Technical presentations, engineering posters and report design</span></div>
+      </div>
+    </section>
+
+    <section id="journey" class="reveal">
+      <h2><span class="sheet mono">06</span>Journey</h2>
+
+      <h3 class="sub">Education</h3>
+      <div class="timeline">
+        <div class="item">
+          <span class="mono when">2019 – 2026</span>
+          <b>B.Sc. in Civil Engineering</b>
+          <span>Khulna University of Engineering &amp; Technology (KUET), Khulna-9203</span>
+          <span>CGPA 3.28 / 4.00 &middot; Thesis field: Water Resource Engineering</span>
+        </div>
+        <div class="item">
+          <span class="mono when">2017 – 2019</span>
+          <b>HSC &amp; SSC</b>
+          <span>Birshreshtha Noor Mohammad Public School &amp; College, Dhaka-1209</span>
+          <span>HSC GPA 5.00 / 5.00 (2019) &middot; SSC GPA 5.00 / 5.00 (2017)</span>
+        </div>
+      </div>
+
+      <h3 class="sub">Leadership</h3>
+      <div class="timeline">
+        <div class="item"><span class="mono when">2024 – 25</span><b>Member Secretary</b><span>KUET Research Society (KRS)</span></div>
+        <div class="item"><span class="mono when">2023 – 25</span><b>Organizing Secretary</b><span>KUET Business &amp; Entrepreneurship Club (KBEC)</span></div>
+        <div class="item"><span class="mono when">2024</span><b>Volunteer</b><span>Reinforce 1.0, Concrete Society of KUET (CSK)</span></div>
+        <div class="item"><span class="mono when">2023</span><b>Campus Director</b><span>CENNOVATION, Dept. of CEE, Islamic University of Technology (IUT)</span></div>
+        <div class="item"><span class="mono when">2022</span><b>Organizing Committee</b><span>TEDx KUET</span></div>
+      </div>
+
+      <h3 class="sub">Achievements</h3>
+      <div class="awards">
+        <div class="award"><span class="medal">1<sup>st</sup><small>Runner Up</small></span><div><b>Truss Challenge</b><span>Reinforce 1.0, KUET (2024). Structural analysis and problem-solving in a competitive design challenge.</span></div></div>
+        <div class="award"><span class="medal">2<sup>nd</sup><small>Runner Up</small></span><div><b>Poster Design Competition</b><span>1st International Show Your Creativity Challenge (2021).</span></div></div>
+        <div class="award"><span class="medal">★<small>Finalist</small></span><div><b>IdeaQuakes (2020)</b><span>Jagannath University IT Society. National innovation and entrepreneurship competition.</span></div></div>
+        <div class="award"><span class="medal">৳<small>Scholar</small></span><div><b>Government Technical Scholarship</b><span>KUET (2019–2020).</span></div></div>
+      </div>
+
+      <h3 class="sub">Workshops &amp; activities</h3>
+      <ul class="chips">
+        <li>SheSTEM Mentorship Program 2026</li>
+        <li>3 Minutes Thesis Competition 2025</li>
+        <li>RCC Component Design with MS Excel (CSK, 2023)</li>
+        <li>Mechanics Maestro, CEISMIC, BUET (2023)</li>
+        <li>Climate Quiz, Safe Women of Bangladesh (2023)</li>
+        <li>AutoCAD Workshop, Civil Alliance KUET (2022)</li>
+        <li>Communication Training, ROBOADDA (2022)</li>
+        <li>PowerPoint Masterclass, Bohubrihi (2021)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2><span class="sheet mono">07</span>Contact</h2>
+      <p class="big">Open to opportunities in water resources, GIS and civil engineering. Let's build something together.</p>
+      <div class="cta left">
+        <a class="btn" href="mailto:mumueshrat@gmail.com">mumueshrat@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/eshrat-jahan-mumu/" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="note">References are available on request.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eshrat Jahan Mumu. All rights reserved. Copying or reuse of this site is not permitted &mdash; see <a href="LICENSE">LICENSE</a>.</p>
+  </footer>
+
+  <button id="top-btn" class="icon-btn to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
