@@ -206,3 +206,40 @@ footer { text-align: center; padding: 30px 6vw; color: var(--muted); font-size: 
 [data-theme="light"] .nav .icon-btn:hover { background: #000; color: #fff; }
 [data-theme="light"] .to-top { background: #000; color: #fff; }
 @media (max-width: 760px) { [data-theme="light"] .nav nav { background: #fff; border-bottom-color: rgba(0,0,0,.15); } }
+
+/* Construction site line drawing */
+.site { max-width: 1280px; padding-block: 36px 24px; }
+.site-cap { font-size: .75rem; color: var(--muted); margin: 0 0 6px; }
+.site-svg { width: 100%; height: auto; color: var(--text); overflow: visible; }
+.lbl text { font-size: 11px; letter-spacing: .14em; }
+.site .ln { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.site.visible .ln { animation: draw-ln 2.2s ease forwards; }
+.site.visible .ln.d1 { animation-delay: .5s; } .site.visible .ln.d2 { animation-delay: 1s; animation-duration: 3s; } .site.visible .ln.d3 { animation-delay: 2.2s; }
+.site .dimln, .site .lbl, .site .exc, .site .truck { opacity: 0; transition: opacity 1s 1.6s; }
+.site.visible .dimln, .site.visible .lbl, .site.visible .exc, .site.visible .truck { opacity: 1; }
+@keyframes draw-ln { to { stroke-dashoffset: 0; } }
+.boom { transform-origin: 155px 205px; animation: boom 5s ease-in-out infinite alternate; }
+.stick { transform-origin: 215px 150px; animation: stick 2.5s ease-in-out infinite alternate; }
+@keyframes boom { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+@keyframes stick { from { transform: rotate(-12deg); } to { transform: rotate(16deg); } }
+.truck { animation: drive 16s linear infinite; }
+@keyframes drive { from { transform: translateX(1230px); } to { transform: translateX(-200px); } }
+.wheel { animation: spin 1.6s linear infinite; }
+@keyframes spin { to { transform: rotate(-360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .site .ln { stroke-dashoffset: 0; } .site .dimln, .site .lbl, .site .exc, .site .truck { opacity: 1; }
+  .truck { transform: translateX(1010px); }
+}
+
+/* Footer: scale bar, north arrow, links */
+footer { padding: 26px 6vw; text-align: left; }
+.foot { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.scalebar { width: 180px; height: 28px; color: var(--text); flex: none; }
+.north { width: 36px; height: 36px; color: var(--text); flex: none; }
+.copy { margin: 0; font-size: .8rem; color: var(--muted); flex: 1 1 260px; }
+.copy a { color: inherit; }
+.foot-nav { display: flex; gap: 22px; margin-left: auto; text-transform: uppercase; font-size: .8rem; letter-spacing: .14em; }
+.foot-nav a { color: var(--text); text-decoration: none; position: relative; }
+.foot-nav a::after { content: ""; position: absolute; left: 0; bottom: -3px; height: 1px; width: 0; background: currentColor; transition: width .25s; }
+.foot-nav a:hover::after { width: 100%; }
+@media (max-width: 760px) { .foot-nav { margin-left: 0; flex-wrap: wrap; gap: 14px; } .scalebar { width: 140px; } }

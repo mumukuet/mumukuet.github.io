@@ -89,6 +89,55 @@
       <a class="scroll" href="#about" aria-label="Scroll down">↓</a>
     </section>
 
+    <section class="site reveal" id="site" aria-label="Construction site elevation drawing">
+      <p class="mono site-cap">SHEET 01A &mdash; SITE ELEVATION</p>
+      <svg class="site-svg" viewBox="0 0 1200 300" role="img" aria-label="Line drawing of an excavator digging, a Warren truss bridge being drawn, and a dump truck driving past">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+          <!-- ground -->
+          <path class="ln" pathLength="1" d="M20 260H1180" stroke-width="1.4"/>
+
+          <!-- dimension line -->
+          <g class="dimln" stroke-width="1.2"><path d="M330 60H540M660 60H870M330 52V68M870 52V68"/></g>
+
+          <!-- bridge -->
+          <g class="bridge">
+            <path class="ln" pathLength="1" d="M300 170H900" stroke-width="3"/>
+            <path class="ln d1" pathLength="1" d="M363.75 105H836.25" stroke-width="3"/>
+            <path class="ln d2" pathLength="1" d="M330 170 L363.75 105 L397.5 170 L431.25 105 L465 170 L498.75 105 L532.5 170 L566.25 105 L600 170 L633.75 105 L667.5 170 L701.25 105 L735 170 L768.75 105 L802.5 170 L836.25 105 L870 170"/>
+            <path class="ln d3" pathLength="1" d="M410 170V260M432 170V260M395 260H447"/>
+            <path class="ln d3" pathLength="1" d="M768 170V260M790 170V260M753 260H805"/>
+          </g>
+
+          <!-- excavator -->
+          <g class="exc">
+            <rect x="70" y="235" width="112" height="25" rx="12"/>
+            <circle cx="90" cy="247" r="6"/><circle cx="162" cy="247" r="6"/>
+            <path d="M85 235V205H170V235M92 205V180H128V205M100 190H120"/>
+            <g class="boom"><path d="M155 205L215 150"/>
+              <g class="stick"><path d="M215 150L258 205M258 205L282 216L254 224Z"/></g>
+            </g>
+            <path class="pile" d="M280 260Q305 232 330 260" stroke-width="1.4"/>
+          </g>
+
+          <!-- dump truck -->
+          <g class="truck">
+            <path d="M0 232V202H24L40 218V232H160M44 232L52 192L150 186L158 232"/>
+            <path d="M8 206H22"/>
+            <g class="wheel" style="transform-origin:20px 246px"><circle cx="20" cy="246" r="14"/><path d="M20 246V234"/></g>
+            <g class="wheel" style="transform-origin:104px 246px"><circle cx="104" cy="246" r="14"/><path d="M104 246V234"/></g>
+            <g class="wheel" style="transform-origin:136px 246px"><circle cx="136" cy="246" r="14"/><path d="M136 246V234"/></g>
+          </g>
+        </g>
+        <g class="lbl mono" fill="currentColor" stroke="none">
+          <text x="600" y="64" text-anchor="middle">8 &#215; 67.5 m &#8212; WARREN TRUSS</text>
+          <text x="352" y="150" opacity=".7">RL 150.00</text>
+          <text x="70" y="282">EX-02 &#8212; BULK EARTHWORKS</text>
+          <text x="330" y="282">ELEVATION &#8212; SCALE 1:200</text>
+          <text x="1010" y="282">ADT-01 &#8212; HAUL 22 t</text>
+        </g>
+      </svg>
+    </section>
+
     <section id="about" class="reveal">
       <h2><span class="sheet mono">02</span>Profile</h2>
       <p class="big">Motivated civil engineering graduate eager to gain hands-on experience and explore innovative solutions. Passionate about sustainable development and dedicated to applying knowledge to real-world challenges while enhancing technical skills.</p>
@@ -243,7 +292,21 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Eshrat Jahan Mumu. All rights reserved. Copying or reuse of this site is not permitted &mdash; see <a href="LICENSE">LICENSE</a>.</p>
+    <div class="foot">
+      <svg class="scalebar" viewBox="0 0 180 28" aria-hidden="true">
+        <g fill="currentColor" font-family="ui-monospace, Menlo, monospace" font-size="9"><text x="0" y="8">0</text><text x="180" y="8" text-anchor="end">100m</text></g>
+        <g stroke="currentColor" stroke-width="1.5"><rect x="1" y="14" width="44" height="9" fill="currentColor"/><rect x="45" y="14" width="44" height="9" fill="none"/><rect x="89" y="14" width="44" height="9" fill="currentColor"/><rect x="133" y="14" width="44" height="9" fill="none"/></g>
+      </svg>
+      <svg class="north" viewBox="0 0 36 36" aria-hidden="true">
+        <circle cx="18" cy="18" r="16" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M18 6L24 24L18 20L12 24Z" fill="currentColor"/>
+        <text x="18" y="33" text-anchor="middle" font-size="7" fill="currentColor" font-family="ui-monospace, Menlo, monospace">N</text>
+      </svg>
+      <p class="copy mono">&copy; 2026 Eshrat Jahan Mumu &middot; All rights reserved &middot; <a href="LICENSE">License</a></p>
+      <nav class="foot-nav mono" aria-label="Footer">
+        <a href="#research">Research</a><a href="#projects">Projects</a><a href="#journey">Leadership</a><a href="#about">About</a>
+      </nav>
+    </div>
   </footer>
 
   <button id="top-btn" class="icon-btn to-top" aria-label="Back to top">↑</button>
